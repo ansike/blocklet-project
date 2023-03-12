@@ -1,4 +1,11 @@
 # 获取区块信息
+```shell
+# 启动前端服务
+yarn dev
+
+# 启动e2e测试
+yarn cypress
+```
 
 服务启动之后访问：
 - 直接访问：http://localhost:8090
@@ -7,4 +14,7 @@
 > query中的hash为区块链中的hash值（https://www.blockchain.com/explorer/blocks/btc/662464）
 
 demo case
-![alt 体验示例](360751678618081_.pic.jpg)
+![页面 体验示例](./screenshots/360751678618081_.pic.jpg)
+
+cypress case
+![e2e 体验示例](./screenshots/360761678631271_.pic.jpg)
