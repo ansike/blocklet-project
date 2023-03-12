@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { message, Input, Empty } from 'antd';
 import Detail from './detail';
 import Transaction from './trasanction';
@@ -11,15 +11,6 @@ function Home() {
   const [loading, setLoading] = useState(false);
   const [block, setBlock] = useState();
   const [messageApi, contextHolder] = message.useMessage();
-
-  useEffect(() => {
-    // 为快速测试使用
-    if (hash) {
-      getBlock();
-    }
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   const getBlock = () => {
     if (!hash) {

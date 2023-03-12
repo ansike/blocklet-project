@@ -4,4 +4,5 @@ module.exports = {
   globals: {
     logger: true,
   },
+  ignorePatterns: ['cypress/**/*'],
 };
