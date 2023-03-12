@@ -1,0 +1,94 @@
+html,
+body,
+#app,
+.app,
+.home {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home {
+  margin: 0 auto;
+  padding: 20px 10% 50px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.transaction {
+  .label {
+    margin-right: 5px;
+  }
+  .text {
+    color: rgb(153, 153, 153);
+  }
+  .detail {
+    display: flex;
+    .tailLeft {
+      min-width: 200px;
+      margin-right: 1rem;
+    }
+    .id {
+      margin-right: 4px;
+    }
+    .time {
+      color: rgb(153, 153, 153);
+      display: block;
+      max-width: 300px;
+      overflow: hidden;
+      position: relative;
+      text-overflow: ellipsis;
+    }
+  }
+  .money {
+    text-align: right;
+  }
+  .feeText {
+    color: rgb(244, 91, 105);
+    margin-right: 4px;
+  }
+
+  .title {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .transItem {
+    display: flex;
+    .left {
+      font-weight: 600;
+      font-size: 0.8rem;
+      min-width: 18px;
+    }
+  }
+  .type {
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(238, 238, 238);
+    margin-right: 1rem;
+  }
+  .columnLine {
+    border-right: 1px solid rgb(238, 238, 238);
+  }
+
+  .ant-collapse,
+  .ant-collapse-header,
+  .ant-collapse-item:last-child {
+    border-radius: 0 !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .transaction .money {
+    text-align: left;
+  }
+  .transaction .columnLine {
+    border-bottom: 1px solid rgb(238, 238, 238);
+    border-right: 0;
+  }
+}

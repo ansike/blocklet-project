@@ -1,15 +1,13 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
-import './app.css';
-import Home from './pages/home';
-import About from './pages/about';
+import './app.less';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="app">
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/home" element={<Home />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
